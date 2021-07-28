@@ -1,0 +1,80 @@
+html {
+  font-size: 10px;
+  background: url('./drumset.png') bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 0.3rem;
+  padding: 0.3rem .1rem;
+  transition: all .07s ease;
+  width: 5rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+.key.hihat {
+  position:absolute;
+  top: 400px;
+  left: 300px;
+}
+.key.openhat {
+  position:absolute;
+  top: 400px;
+  left: 250px;
+}
+.key.ride {
+  position: absolute;
+  right: 300px;
+}
+.key.tom {
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+.key.kick {
+  position: absolute;
+  top: 350px;
+  right: 600px;
+}
+.key.snare {
+  position: absolute;
+  top: 350px;
+  left: 450px;
+}
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 2rem;
+}
+
+.sound {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
